@@ -48,11 +48,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             for lib in libs{
                 if !whitelist.contains(lib){
                     showingLibs.append(lib)
-                    NSLog("New library found: "+lib)
                 }
             }
             if showingLibs.count == 0{
                 showingLibs.append("None")
+            } else {
+                dumpLibs(libs: showingLibs)
             }
         }
         table.reloadData()
@@ -352,7 +353,71 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         "MetalKit",
         "libMobileGestaltExtensions.dylib",
         "libobjc-trampolines.dylib",
-        "libTrueTypeScaler.dylib"
+        "libTrueTypeScaler.dylib",
+        
+        // Dumped with jailbreak but filtered from iPad iOS 12.2 - Chimera
+        "libpcap.A.dylib",
+        "IOSurfaceAccelerator",
+        "MetalPerformanceShaders",
+        "UserFS",
+        "CrashReporterSupport",
+        "PowerLog",
+        "IOAccelerator",
+        "libtailspin.dylib",
+        "SignpostCollection",
+        "ktrace",
+        "SampleAnalysis",
+        "kperfdata",
+        "libdscsym.dylib",
+        "SignpostNotification",
+        "SignpostSupport",
+        "LoggingSupport",
+        "MobileKeyBag",
+        "kperf",
+        "IOMobileFramebuffer",
+        "libauthinstall.dylib",
+        "libamsupport.dylib",
+        "libSERestoreInfo.dylib",
+        "DeviceIdentity",
+        "DiskImages",
+        "libReverseProxyDevice.dylib",
+        "MediaKit",
+        "APFS",
+        "libutil.dylib",
+        "ASEProcessing",
+        "libEDR",
+        "HangTracer",
+        "CoreBrightness",
+        "MPSCore",
+        "MPSImage",
+        "MPSNeuralNetwork",
+        "MPSMatrix",
+        "MPSRayIntersector",
+        "liblockdown.dylib",
+        "StudyLog",
+        "SymptomDiagnosticReporter",
+        "libmis.dylib",
+        "Netrb",
+        "MobileWiFi",
+        "CaptiveNetwork",
+        "EAP8021X",
+        "UserManagement",
+        "SetupAssistantSupport",
+        "CoreFollowUp",
+        "MessageProtection",
+        "CoreAUC",
+        "IdleTimerServices",
+        "NetworkStatistics",
+        "libstdc++.6.dylib",
+        "WebKit",
+        "CorePDF",
+        "CorePrediction",
+        "PDFKit",
+        "SafariSafeBrowsing",
+        "CoreOptimization",
+        "DataDetectorsCore",
+        "AppleFSCompression",
+        "CTCarrierSpace"
     ]
     
 }
