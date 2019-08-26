@@ -28,3 +28,8 @@ func getLibs() -> [String]{
 ## Whitelisting
 
 In order to whitelist libraries it is required to run the application in all different kinds of non-compromised devices to see wether new libraries appear and lower the chance of running into false positives that could be fatal.
+
+## TODO:
+
+1. Ensure app resizes well in all devices
+2. While testing, dump all the libraries to improve the whitelist
