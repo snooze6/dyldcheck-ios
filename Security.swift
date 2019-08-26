@@ -20,3 +20,11 @@ func getLibs() -> [String]{
     }
     return array
 }
+
+func getLibNames() -> [String]{
+    var ret = [String]()
+    for lib in getLibs(){
+        ret.append(String(lib.split(separator: "/").last ?? "nil"))
+    }
+    return ret
+}

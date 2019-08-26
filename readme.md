@@ -31,5 +31,4 @@ In order to whitelist libraries it is required to run the application in all dif
 
 ## TODO:
 
-1. Ensure app resizes well in all devices
-2. While testing, dump all the libraries to improve the whitelist
+1. Dump all the libraries in multiple devices to add to the whitelist
